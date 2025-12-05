@@ -1,821 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CHOLOK INTELLIGENT SYSTEM - AI-based software company providing ERP Solutions, AI Tools Development, Website Development, and Data Science services. Where Innovation Meets Intelligence.">
-    <meta name="keywords" content="AI software, ERP solutions, AI tools, web development, e-commerce, data science, data analysis, intelligent systems">
-    <meta name="author" content="CHOLOK INTELLIGENT SYSTEM">
-    <meta property="og:title" content="CHOLOK INTELLIGENT SYSTEM - Where Innovation Meets Intelligence">
-    <meta property="og:description" content="Leading AI-based software company specializing in ERP, AI Tools, Web Development, and Data Science">
-    <meta property="og:type" content="website">
-    
-    <title>CHOLOK INTELLIGENT SYSTEM - Where Innovation Meets Intelligence</title>
-    
+    <title>Md. Mohidul Islam (Sobuj) - Software Architect & Project Lead</title>
+    <meta name="description"
+        content="Portfolio of Md. Mohidul Islam (Sobuj), Software Architect, Project Manager, and Data Analyst with 12+ years of experience.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-    </button>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <i class="fas fa-brain"></i>
-                <span class="logo-text">CHOLOK<span class="logo-accent">IS</span></span>
+            <a href="#" class="logo">Sobuj<span class="dot">.</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
             </div>
-            
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        
+        <canvas id="particles-js"></canvas>
         <div class="container hero-container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="hero-badge">
-                    <i class="fas fa-rocket"></i>
-                    <span>AI-Powered Solutions</span>
-                </div>
-                <h1 class="hero-title">
-                    Welcome to <span class="gradient-text">CHOLOK</span><br>
-                    <span class="gradient-text-alt">INTELLIGENT SYSTEM</span>
-                </h1>
-                <p class="hero-subtitle">Where Innovation Meets Intelligence</p>
-                <p class="hero-description">
-                    Transforming businesses through cutting-edge AI solutions, intelligent automation, 
-                    and data-driven insights. Your partner in digital excellence.
-                </p>
+            <div class="hero-content reveal-left">
+                <span class="greeting">Hi, I'm</span>
+                <h1 class="name">Md. Mohidul Islam <span class="highlight">(Sobuj)</span></h1>
+                <p class="title"><span class="typing-text"></span></p>
+                <p class="tagline">Passionate about building scalable solutions and leading high-performing teams to
+                    deliver innovative software products.</p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">
-                        <span>Explore Services</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Get Started</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </a>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="stat-number" data-count="30">0</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-number" data-count="99">0</div>
-                        <div class="stat-label">Success Rate %</div>
-                    </div>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
                 </div>
             </div>
-            
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
-                <div class="floating-card card-1">
-                    <i class="fas fa-robot"></i>
-                    <span>AI Development</span>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Data Analytics</span>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fas fa-code"></i>
-                    <span>Web Solutions</span>
-                </div>
-                <div class="hero-image-placeholder">
-                    <div class="tech-circle"></div>
-                    <div class="tech-circle"></div>
-                    <div class="tech-circle"></div>
+            <div class="hero-visual reveal-right">
+                <div class="profile-circle">
+                    <img src="profile.jpg" alt="Md. Mohidul Islam (Sobuj)" class="profile-img">
                 </div>
             </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll to explore</p>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section-padding">
+    <section id="about" class="section about">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">About Us</span>
-                <h2 class="section-title">Pioneering the Future of <span class="gradient-text">Intelligent Solutions</span></h2>
-                <p class="section-description">
-                    We are a forward-thinking AI-based software company dedicated to revolutionizing 
-                    how businesses operate through intelligent automation and data-driven strategies.
-                </p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="about-image-wrapper">
-                        <div class="image-placeholder">
-                            <i class="fas fa-lightbulb"></i>
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p class="lead">Experienced Software Architect, Project Manager, and Data Analyst with 12+ years of
+                        expertise in software design, architecture, database engineering, and enterprise solution
+                        development.</p>
+                    <p>I have a strong track record of leading teams and delivering complex projects in various domains
+                        including Banking, ERP, and ISP management. My passion lies in continuous learning and adapting
+                        to new technologies to solve real-world business problems.</p>
+                    <div class="highlights stagger-delay">
+                        <div class="highlight-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Software Architecture</span>
                         </div>
-                        <div class="floating-badge badge-1">
-                            <i class="fas fa-award"></i>
-                            <span>Excellence</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Project Leadership</span>
                         </div>
-                        <div class="floating-badge badge-2">
-                            <i class="fas fa-users"></i>
-                            <span>Expert Team</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-text" data-aos="fade-left">
-                    <div class="mission-vision">
-                        <div class="mv-card">
-                            <div class="mv-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h3>Our Mission</h3>
-                            <p>
-                                To empower businesses with intelligent, scalable, and innovative software 
-                                solutions that drive growth, efficiency, and competitive advantage in the 
-                                digital age.
-                            </p>
-                        </div>
-                        
-                        <div class="mv-card">
-                            <div class="mv-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h3>Our Vision</h3>
-                            <p>
-                                To be the global leader in AI-powered business solutions, transforming 
-                                industries through cutting-edge technology and unparalleled innovation.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Innovation-Driven Approach</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Cutting-Edge AI Technology</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Client-Centric Solutions</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Proven Track Record</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Our Services</span>
-                <h2 class="section-title">Comprehensive <span class="gradient-text">Technology Solutions</span></h2>
-                <p class="section-description">
-                    From AI-powered tools to enterprise systems, we deliver end-to-end solutions 
-                    tailored to your business needs.
-                </p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-network-wired"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>ERP Software Solutions</h3>
-                    <p>
-                        Comprehensive enterprise resource planning systems that streamline operations, 
-                        integrate processes, and provide real-time business insights for optimal performance.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Custom ERP Development</li>
-                        <li><i class="fas fa-check"></i> System Integration</li>
-                        <li><i class="fas fa-check"></i> Process Automation</li>
-                        <li><i class="fas fa-check"></i> Real-time Analytics</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
-                    <div class="featured-badge">
-                        <i class="fas fa-star"></i>
-                        <span>Popular</span>
-                    </div>
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>AI Tools Development</h3>
-                    <p>
-                        Cutting-edge artificial intelligence solutions including machine learning models, 
-                        natural language processing, computer vision, and intelligent automation systems.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Machine Learning Models</li>
-                        <li><i class="fas fa-check"></i> NLP Solutions</li>
-                        <li><i class="fas fa-check"></i> Computer Vision</li>
-                        <li><i class="fas fa-check"></i> Predictive Analytics</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>Website & E-Commerce Development</h3>
-                    <p>
-                        Modern, responsive, and high-performance websites and e-commerce platforms 
-                        designed to engage users and drive conversions.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Responsive Web Design</li>
-                        <li><i class="fas fa-check"></i> E-Commerce Platforms</li>
-                        <li><i class="fas fa-check"></i> CMS Development</li>
-                        <li><i class="fas fa-check"></i> SEO Optimization</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-pie"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>Data Analysis & Data Science</h3>
-                    <p>
-                        Transform raw data into actionable insights with advanced analytics, 
-                        visualization, and data science solutions that drive informed decision-making.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Data Mining & Analysis</li>
-                        <li><i class="fas fa-check"></i> Business Intelligence</li>
-                        <li><i class="fas fa-check"></i> Data Visualization</li>
-                        <li><i class="fas fa-check"></i> Statistical Modeling</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="why-us section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Why Choose Us</span>
-                <h2 class="section-title">What Makes Us <span class="gradient-text">Different</span></h2>
-                <p class="section-description">
-                    We combine technical excellence with business acumen to deliver solutions 
-                    that truly make a difference.
-                </p>
-            </div>
-            
-            <div class="why-us-grid">
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="why-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI-Driven Innovation</h3>
-                    <p>
-                        Leveraging the latest in artificial intelligence and machine learning 
-                        to create intelligent, adaptive solutions that evolve with your business.
-                    </p>
-                </div>
-                
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="why-icon">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                    </div>
-                    <h3>Scalable Solutions</h3>
-                    <p>
-                        Future-proof architectures designed to grow with your business, 
-                        ensuring long-term value and seamless expansion capabilities.
-                    </p>
-                </div>
-                
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="why-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3>Expert Team</h3>
-                    <p>
-                        Seasoned professionals with deep expertise in AI, software development, 
-                        and data science, committed to your success.
-                    </p>
-                </div>
-                
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="why-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Security First</h3>
-                    <p>
-                        Enterprise-grade security measures and best practices to protect 
-                        your data and ensure compliance with industry standards.
-                    </p>
-                </div>
-                
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="why-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Support</h3>
-                    <p>
-                        Round-the-clock technical support and maintenance to ensure your 
-                        systems run smoothly without interruption.
-                    </p>
-                </div>
-                
-                <div class="why-card" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="why-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Rapid Deployment</h3>
-                    <p>
-                        Agile development methodologies that deliver results faster without 
-                        compromising on quality or functionality.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Portfolio</span>
-                <h2 class="section-title">Our <span class="gradient-text">Success Stories</span></h2>
-                <p class="section-description">
-                    Explore our portfolio of innovative projects that have transformed businesses 
-                    across various industries.
-                </p>
-            </div>
-            
-            <div class="portfolio-filters" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ai">AI Solutions</button>
-                <button class="filter-btn" data-filter="erp">ERP Systems</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="data">Data Science</button>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>AI-Powered Customer Service Bot</h3>
-                            <p>Natural Language Processing • Machine Learning</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">AI Solutions</span>
-                        <h4>Customer Service Automation</h4>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="erp" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Enterprise Resource Planning System</h3>
-                            <p>Full-Stack Development • Cloud Integration</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">ERP Systems</span>
-                        <h4>Manufacturing ERP Solution</h4>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>E-Commerce Platform</h3>
-                            <p>Responsive Design • Payment Integration</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">Web Development</span>
-                        <h4>Multi-Vendor Marketplace</h4>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="data" data-aos="fade-up" data-aos-delay="400">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <div class="highlight-item">
                             <i class="fas fa-chart-line"></i>
+                            <span>Data Science Learner</span>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>Business Intelligence Dashboard</h3>
-                            <p>Data Visualization • Predictive Analytics</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        <div class="highlight-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Adaptability</span>
                         </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">Data Science</span>
-                        <h4>Real-Time Analytics Platform</h4>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="500">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-camera"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Computer Vision System</h3>
-                            <p>Image Recognition • Deep Learning</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">AI Solutions</span>
-                        <h4>Quality Control Automation</h4>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="600">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Progressive Web Application</h3>
-                            <p>PWA • Offline Capabilities</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-category">Web Development</span>
-                        <h4>Corporate Portal</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technologies Section -->
-    <section id="technologies" class="technologies section-padding">
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Technologies</span>
-                <h2 class="section-title">Powered by <span class="gradient-text">Cutting-Edge Tech</span></h2>
-            </div>
-            
-            <div class="tech-grid" data-aos="fade-up" data-aos-delay="100">
-                <div class="tech-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="skills-grid stagger-delay">
+                <!-- Software Design & Architecture -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-drafting-compass"></i> Architecture & Design</h3>
+                    <ul class="skill-list">
+                        <li>DDD (Domain-Driven Design)</li>
+                        <li>SDLC</li>
+                        <li>CQRS</li>
+                        <li>SOLID Principles</li>
+                        <li>Microservices</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
+
+                <!-- Technologies -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Technologies</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="95%">
+                            <div class="info"><span>C# / .NET Core</span><span>95%</span></div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="90%">
+                            <div class="info"><span>ASP.NET Core / Blazor</span><span>90%</span></div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="80%">
+                            <div class="info"><span>Python</span><span>80%</span></div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="85%">
+                            <div class="info"><span>SQL</span><span>85%</span></div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-level="75%">
+                            <div class="info"><span>ReactJS / AngularJS</span><span>75%</span></div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
+
+                <!-- Databases -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <ul class="skill-tags">
+                        <li>MSSQL</li>
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                        <li>MongoDB</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <ul class="skill-tags">
+                        <li>Docker</li>
+                        <li>IIS</li>
+                        <li>Git</li>
+                        <li>Bitbucket</li>
+                        <li>Jira</li>
+                    </ul>
                 </div>
-                <div class="tech-item">
-                    <i class="fas fa-database"></i>
-                    <span>MongoDB</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-docker"></i>
-                    <span>Docker</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-aws"></i>
-                    <span>AWS</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-brain"></i>
-                    <span>TensorFlow</span>
+
+                <!-- Data Science -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-brain"></i> Data Science</h3>
+                    <ul class="skill-tags">
+                        <li>Scikit-learn</li>
+                        <li>Pandas</li>
+                        <li>Power BI</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section-padding">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Testimonials</span>
-                <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
-                <p class="section-description">
-                    Don't just take our word for it - hear from the businesses we've helped transform.
-                </p>
-            </div>
-            
-            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
-                <div class="testimonial-track">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="testimonial-author">
-                                <h4>Sarah Johnson</h4>
-                                <p>CEO, TechCorp Industries</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "CHOLOK Intelligent System transformed our operations with their AI-powered ERP solution. 
-                            The efficiency gains have been remarkable, and their team's expertise is unmatched. 
-                            Highly recommended!"
-                        </p>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
+            <h2 class="section-title reveal">Project Highlights</h2>
+            <div class="projects-grid stagger-delay">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>Data Warehouse Project</h3>
+                        <span class="client">Standard Chartered Bank</span>
                     </div>
-                    
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="testimonial-author">
-                                <h4>Michael Chen</h4>
-                                <p>CTO, DataFlow Solutions</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "The data analytics platform they built for us has revolutionized how we make decisions. 
-                            Real-time insights, beautiful visualizations, and predictive capabilities that actually work. 
-                            Outstanding work!"
-                        </p>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
+                    <div class="project-body">
+                        <p>Designed and implemented a comprehensive data warehouse solution to streamline banking
+                            operations and reporting.</p>
+                        <div class="project-role"><strong>Role:</strong> Architect / Lead</div>
                     </div>
-                    
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="testimonial-author">
-                                <h4>Emily Rodriguez</h4>
-                                <p>Founder, E-Shop Global</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "Our e-commerce platform exceeded all expectations. Beautiful design, seamless functionality, 
-                            and the AI-powered recommendation engine has boosted our sales by 40%. Thank you, CHOLOK!"
-                        </p>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
+                    <div class="project-tech">
+                        <span>SQL Server</span><span>SSIS</span><span>Power BI</span>
                     </div>
                 </div>
-                
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev-btn" id="prev-testimonial">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="testimonial-dots" id="testimonial-dots"></div>
-                    <button class="testimonial-btn next-btn" id="next-testimonial">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>HRIMS-ERP Implementation</h3>
+                        <span class="client">Major Corporate Groups</span>
+                    </div>
+                    <div class="project-body">
+                        <p>Led the implementation of a Human Resource Information Management System and ERP for
+                            large-scale corporate clients.</p>
+                        <div class="project-role"><strong>Role:</strong> Project Manager</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>.NET Core</span><span>Angular</span><span>MSSQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>ISP Customer Management System</h3>
+                        <span class="client">Amber IT</span>
+                    </div>
+                    <div class="project-body">
+                        <p>Developed a customer management system with real-time billing integration for a leading ISP.
+                        </p>
+                        <div class="project-role"><strong>Role:</strong> Team Lead</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>ASP.NET</span><span>Real-time Billing</span><span>API</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>Loan & Courier Delivery System</h3>
+                        <span class="client">Standard Chartered Bank</span>
+                    </div>
+                    <div class="project-body">
+                        <p>Automated loan processing and courier delivery tracking system to improve efficiency and
+                            customer service.</p>
+                        <div class="project-role"><strong>Role:</strong> Lead Developer</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>C#</span><span>Web API</span><span>Mobile Integration</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>SLMS & Financial Accounts</h3>
+                        <span class="client">BTCL & Consulting</span>
+                    </div>
+                    <div class="project-body">
+                        <p>Subscriber Line Management System for BTCL and financial accounts reconstruction consulting
+                            services.</p>
+                        <div class="project-role"><strong>Role:</strong> Consultant / Architect</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Enterprise Architecture</span><span>Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience Timeline</h2>
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Manager, Software Development</h3>
+                        <div class="company">Amber IT Ltd</div>
+                        <div class="duration">2021 - Present</div>
+                        <p>Leading software development teams, overseeing architecture, and managing enterprise
+                            projects.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Sr. Software Engineer (Team Lead)</h3>
+                        <div class="company">Amber IT Ltd</div>
+                        <div class="duration">2012 - 2021</div>
+                        <p>Led development teams in building enterprise applications for various clients.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <div class="company">Amber IT Ltd</div>
+                        <div class="duration">2010 - 2012</div>
+                        <p>Developed and maintained business applications using .NET technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="education-grid">
+                <div class="education-card reveal">
+                    <h3>B.Sc. in Computer Science & Engineering</h3>
+                    <div class="institution">Dhaka International University</div>
+                    <div class="duration">2014 - 2018</div>
+                    <p>Specialized in Software Engineering and Database Systems</p>
+                </div>
+                <div class="education-card reveal">
+                    <h3>Machine Learning Specialization</h3>
+                    <div class="institution">Jahangirnagar University</div>
+                    <div class="duration">2023</div>
+                    <p>Advanced coursework in machine learning algorithms and applications</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section-padding">
+    <section id="contact" class="section contact">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Contact Us</span>
-                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing Together</span></h2>
-                <p class="section-description">
-                    Ready to transform your business? Get in touch with us today.
-                </p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Visit Us</h3>
-                        <p>123 Innovation Street<br>Tech City, TC 12345</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Call Us</h3>
-                        <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email Us</h3>
-                        <p>info@cholokintelligent.com<br>support@cholokintelligent.com</p>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Business Hours</h3>
-                        <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" required>
-                                <i class="fas fa-user"></i>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" required>
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="service">Service Interested In</label>
-                                <select id="service" name="service" required>
-                                    <option value="">Select a service</option>
-                                    <option value="erp">ERP Software Solutions</option>
-                                    <option value="ai">AI Tools Development</option>
-                                    <option value="web">Website & E-Commerce</option>
-                                    <option value="data">Data Analysis & Science</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <i class="fas fa-comment-dots"></i>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    
-                    <div class="form-success" id="form-success">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Thank You!</h3>
-                        <p>Your message has been sent successfully. We'll get back to you soon.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="map-container" data-aos="fade-up">
-                <div class="map-placeholder">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <p>Interactive Map Location</p>
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-content reveal">
+                <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:sobuj@example.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -824,79 +370,15 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
-                    <div class="footer-logo">
-                        <i class="fas fa-brain"></i>
-                        <span class="logo-text">CHOLOK<span class="logo-accent">IS</span></span>
-                    </div>
-                    <p class="footer-description">
-                        Where Innovation Meets Intelligence. Transforming businesses through 
-                        AI-powered solutions and cutting-edge technology.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#services">ERP Solutions</a></li>
-                        <li><a href="#services">AI Development</a></li>
-                        <li><a href="#services">Web Development</a></li>
-                        <li><a href="#services">Data Science</a></li>
-                        <li><a href="#services">Consulting</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get the latest updates and insights.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" aria-label="Subscribe">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 CHOLOK INTELLIGENT SYSTEM. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
+            <p>&copy; 2024 Md. Mohidul Islam (Sobuj). All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Particles JS Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

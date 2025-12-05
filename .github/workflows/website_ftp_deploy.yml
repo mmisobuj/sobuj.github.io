@@ -14,7 +14,8 @@ jobs:
        server: 103.134.70.83
        username: cholok-ftp@cholokis.com
        password: 8urhW79oHsyf
-       server-dir: /public_html/sobuj/
+       server-dir: /sobuj/
        port: 21
        protocol: ftp
+     
       
